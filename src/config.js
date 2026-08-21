@@ -18,16 +18,13 @@ export const config = {
   logos: {
     // Logo completa — login, header das telas e etiquetas
     full: 'https://mysia.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-10-at-09.43.42-Photoroom.png',
-    // Ícone quadrado — notificações push
-    icon: 'https://mysia.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-10-at-09.43.42-Photoroom.png',
+    // Ícone quadrado — notificações push (M dourado em fundo preto)
+    icon: 'https://mysia.com.br/wp-content/uploads/2026/08/Design-sem-nome-59.png',
     // Letra de fallback caso a logo não carregue
     fallbackLetter: 'M',
   },
 
   // ─── Cores da marca ──────────────────────────────────────────────
-  // Alimentam o tailwind.config.js automaticamente.
-  // Classes disponíveis: bg-primary, text-primary, border-primary,
-  //                      bg-secondary, bg-dark, text-action, etc.
   colors: {
     primary:   '#C9A46B',  // dourado Mysia (botões, destaques)
     secondary: '#000000',  // preto (header, nav de baixo, cards)
@@ -36,7 +33,6 @@ export const config = {
   },
 
   // ─── Paleta dos gráficos do Dashboard ────────────────────────────
-  // Tons derivados da marca. Ordem: usados de cima pra baixo nos gráficos.
   chartColors: ['#C9A46B', '#000000', '#B8935A', '#4a4a4a', '#A6824B', '#8a8a8a'],
 
   // Cores das 3 métricas do Dashboard
@@ -47,13 +43,10 @@ export const config = {
   },
 
   // ─── Web Push (notificações) ─────────────────────────────────────
-  // ATENÇÃO: cada cliente PRECISA de chaves VAPID próprias.
-  // Veja o README para gerar. Esta chave pública tem que ser
-  // EXATAMENTE a mesma que está no plugin fk-webpush do WordPress.
   vapidPublicKey: 'BlJUl8puNsRquUFx66Pa4AHxObMLnyJiJhT3mIvVjBylWXlZkqqdUNrsWHpFpL-lnGXiejm8y823Zycr3cUB90Q',
 
   // ─── Rodapé ──────────────────────────────────────────────────────
-  agencyLogo: '/logo%20azul%20escuro.png',   // arquivo dentro de /public
+  agencyLogo: '/logo%20azul%20escuro.png',
   agencyName: 'FK Digital',
 }
 
