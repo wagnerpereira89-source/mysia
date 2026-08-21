@@ -43,7 +43,7 @@ export const config = {
   },
 
   // ─── Web Push (notificações) ─────────────────────────────────────
-  vapidPublicKey: 'BIJUI8puNsRquUFx66Pa4AHxObMLnyJiJhT3mIvVjBylWXIZkqqdUNrsWHpFpL-InGXiejm8y823Zycr3cUB90Q',
+  vapidPublicKey: 'BO0nyGcJLQy0zdjMLIWMb_OZ6yMntgPyTIgCQ-3rWxIMbsPGT2uA5MwFtuZuRbUWkhAjwhTbqRMbkG1D56k7WAQ',
 
   // ─── Rodapé ──────────────────────────────────────────────────────
   agencyLogo: '/logo%20azul%20escuro.png',
