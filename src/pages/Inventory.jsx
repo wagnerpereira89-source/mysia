@@ -90,19 +90,19 @@ export default function Inventory() {
   return (
     <div className="min-h-screen bg-[#fafafa]">
       {/* Header igual ao Dashboard */}
-      <header className="sticky top-0 z-40 bg-white border-b border-[#e4e4e7] px-4 h-20 flex items-center gap-3">
+      <header className="sticky top-0 z-40 bg-black border-b border-[#1a1a1a] px-4 h-24 flex items-center gap-3">
         <img
           src={LOGO_URL}
           alt={config.clientName}
-          className="h-14 w-auto object-contain"
+          className="h-16 w-auto object-contain"
           onError={(e) => { e.target.style.display = 'none' }}
         />
-        <div className="w-px h-8 bg-[#e4e4e7]" />
-        <h1 className="text-base font-bold text-[#1a1a1a]">Inventário</h1>
+        <div className="w-px h-8 bg-[#3a3a3a]" />
+        <h1 className="text-base font-bold text-white">Inventário</h1>
         <div className="flex-1" />
         <button
           onClick={logout}
-          className="p-2 rounded-lg text-[#52525b] hover:bg-[#f4f4f5]"
+          className="p-2 rounded-lg text-white hover:bg-[#1a1a1a]"
           title="Sair"
         >
           <LogOut size={18} />
