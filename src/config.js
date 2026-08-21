@@ -6,22 +6,22 @@
 
 export const config = {
   // ─── Identificação ───────────────────────────────────────────────
-  clientName:      'Adoratta Boutique',              // nome completo (título, login)
-  clientShortName: 'Adoratta',                        // nome curto (ícone do celular, máx ~12 chars)
-  appDescription:  'Gestão de produtos da Adoratta',  // descrição na instalação do PWA
-  appSlug:         'adoratta',                        // identificador interno (localStorage, tags)
+  clientName:      'Mysia Loja',                     // nome completo (título, login)
+  clientShortName: 'Mysia',                          // nome curto (ícone do celular, máx ~12 chars)
+  appDescription:  'Gestão de produtos da Mysia',    // descrição na instalação do PWA
+  appSlug:         'mysia',                          // identificador interno (localStorage, tags)
 
   // ─── WordPress ───────────────────────────────────────────────────
-  siteUrl: 'https://adorattab.com.br',                // SEM barra no final
+  siteUrl: 'https://mysia.com.br',                   // SEM barra no final
 
   // ─── Logos ───────────────────────────────────────────────────────
   logos: {
     // Logo completa — login, header das telas e etiquetas
-    full: 'https://adorattab.com.br/wp-content/uploads/2026/05/LOGOTIPO-ADORATTA-SEM-FUNDO-19.png',
+    full: 'https://mysia.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-10-at-09.43.42-Photoroom.png',
     // Ícone quadrado — notificações push
-    icon: 'https://adorattab.com.br/wp-content/uploads/2026/05/LOGOTIPO-ADORATTA-SEM-FUNDO-33.png',
+    icon: 'https://mysia.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-10-at-09.43.42-Photoroom.png',
     // Letra de fallback caso a logo não carregue
-    fallbackLetter: 'A',
+    fallbackLetter: 'M',
   },
 
   // ─── Cores da marca ──────────────────────────────────────────────
@@ -29,28 +29,28 @@ export const config = {
   // Classes disponíveis: bg-primary, text-primary, border-primary,
   //                      bg-secondary, bg-dark, text-action, etc.
   colors: {
-    primary:   '#354734',  // cor principal (botões, destaques)
-    secondary: '#e7aea4',  // cor secundária (acentos)
-    dark:      '#00021c',  // escuro da marca
+    primary:   '#C9A46B',  // dourado Mysia (botões, destaques)
+    secondary: '#000000',  // preto (header, nav de baixo, cards)
+    dark:      '#000000',  // preto puro
     action:    '#3b82f6',  // azul de links/ações (pode manter)
   },
 
   // ─── Paleta dos gráficos do Dashboard ────────────────────────────
   // Tons derivados da marca. Ordem: usados de cima pra baixo nos gráficos.
-  chartColors: ['#354734', '#e7aea4', '#7c9c7b', '#c9887f', '#2a3929', '#f0c4be'],
+  chartColors: ['#C9A46B', '#000000', '#B8935A', '#4a4a4a', '#A6824B', '#8a8a8a'],
 
   // Cores das 3 métricas do Dashboard
   metricColors: {
-    vendas:  '#e7aea4',
-    receita: '#354734',
-    ticket:  '#7c9c7b',
+    vendas:  '#C9A46B',
+    receita: '#000000',
+    ticket:  '#B8935A',
   },
 
   // ─── Web Push (notificações) ─────────────────────────────────────
   // ATENÇÃO: cada cliente PRECISA de chaves VAPID próprias.
   // Veja o README para gerar. Esta chave pública tem que ser
   // EXATAMENTE a mesma que está no plugin fk-webpush do WordPress.
-  vapidPublicKey: 'BIQIBhxIaSXaGL6nZ33WdTbI2mkC1XS1ZgTaCyIIABG1cw7x_tb8YgEc9hNMwGC5xtGNNW8BIdvh6OL1V2xk5Lc',
+  vapidPublicKey: 'BlJUl8puNsRquUFx66Pa4AHxObMLnyJiJhT3mIvVjBylWXlZkqqdUNrsWHpFpL-lnGXiejm8y823Zycr3cUB90Q',
 
   // ─── Rodapé ──────────────────────────────────────────────────────
   agencyLogo: '/logo%20azul%20escuro.png',   // arquivo dentro de /public
