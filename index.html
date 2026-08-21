@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!--
-  %APP_NAME%, %APP_SHORT_NAME% e %THEME_COLOR% são preenchidos no build
-  a partir do src/config.js. NÃO edite este arquivo para trocar de cliente.
+  %APP_NAME%, %APP_SHORT_NAME%, %APP_DESCRIPTION%, %THEME_COLOR%, %OG_IMAGE_URL% e %SITE_URL%
+  são preenchidos no build a partir do src/config.js. NÃO edite este arquivo para trocar de cliente.
 -->
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="%THEME_COLOR%" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -17,6 +17,22 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="%APP_NAME%" />
+    <meta property="og:description" content="%APP_DESCRIPTION%" />
+    <meta property="og:image" content="%OG_IMAGE_URL%" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:url" content="%SITE_URL%" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="%APP_NAME%" />
+    <meta name="twitter:description" content="%APP_DESCRIPTION%" />
+    <meta name="twitter:image" content="%OG_IMAGE_URL%" />
+
     <title>%APP_NAME%</title>
   </head>
   <body>
