@@ -451,15 +451,15 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-[#fafafa]">
       {/* Header */}
-      <header className="sticky top-0 z-40 bg-white border-b border-[#e4e4e7] px-4 h-20 flex items-center gap-3">
+      <header className="sticky top-0 z-40 bg-black border-b border-[#1a1a1a] px-4 h-24 flex items-center gap-3">
         <img
           src={config.logos.full}
           alt={config.clientName}
-          className="h-14 w-auto object-contain"
+          className="h-16 w-auto object-contain"
           onError={(e) => { e.target.style.display = 'none' }}
         />
-        <div className="w-px h-8 bg-[#e4e4e7]" />
-        <h1 className="text-base font-bold text-[#1a1a1a]">Dashboard</h1>
+        <div className="w-px h-8 bg-[#3a3a3a]" />
+        <h1 className="text-base font-bold text-white">Dashboard</h1>
         <div className="flex-1" />
         {notifSupported && (
           <button onClick={handleToggleNotifications}
@@ -470,7 +470,7 @@ export default function Dashboard() {
           </button>
         )}
         <button onClick={load} disabled={loading}
-          className="p-2 rounded-lg text-[#52525b] hover:bg-[#f4f4f5] disabled:opacity-40">
+          className="p-2 rounded-lg text-white hover:bg-[#1a1a1a] disabled:opacity-40">
           <RefreshCw size={18} className={loading ? 'animate-spin' : ''} />
         </button>
       </header>
@@ -558,7 +558,7 @@ export default function Dashboard() {
         {!loading && topProducts.length > 0 && (
           <div className="bg-white rounded-2xl border border-[#e4e4e7] p-4">
             <div className="flex items-center justify-between mb-1">
-              <p className="text-base font-bold text-[#1a1a1a]">Melhores desempenhos</p>
+              <p className="text-base font-bold text-white">Melhores desempenhos</p>
             </div>
             <p className="text-xs text-[#a1a1aa] mb-4">{periodDates.label}</p>
             <div className="flex justify-between text-xs font-semibold text-[#a1a1aa] mb-2 px-1">
@@ -577,7 +577,7 @@ export default function Dashboard() {
                     <p className="text-sm font-medium text-[#1a1a1a] truncate">{p.name}</p>
                     <p className="text-xs text-[#52525b]">Vendas líquidas: {formatBRL(p.total)}</p>
                   </div>
-                  <span className="text-base font-bold text-[#1a1a1a]">{p.qty}</span>
+                  <span className="text-base font-bold text-white">{p.qty}</span>
                 </div>
               ))}
             </div>
@@ -587,7 +587,7 @@ export default function Dashboard() {
         {/* Top unidades de retirada */}
         {!loading && topPickup.length > 0 && (
           <div className="bg-white rounded-2xl border border-[#e4e4e7] p-4">
-            <p className="text-base font-bold text-[#1a1a1a]">Top Unidades de Retirada</p>
+            <p className="text-base font-bold text-white">Top Unidades de Retirada</p>
             <p className="text-xs text-[#a1a1aa] mb-4">Ranking de lojas físicas</p>
             <div className="space-y-4">
               {topPickup.map((u, i) => (
