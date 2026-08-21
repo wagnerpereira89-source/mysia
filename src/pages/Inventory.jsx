@@ -90,11 +90,11 @@ export default function Inventory() {
   return (
     <div className="min-h-screen bg-[#fafafa]">
       {/* Header igual ao Dashboard */}
-      <header className="sticky top-0 z-40 bg-black border-b border-[#1a1a1a] px-4 h-24 flex items-center gap-3">
+      <header className="sticky top-0 z-40 bg-black border-b border-[#1a1a1a] px-4 h-28 flex items-center gap-3">
         <img
           src={LOGO_URL}
           alt={config.clientName}
-          className="h-16 w-auto object-contain"
+          className="h-20 w-auto object-contain"
           onError={(e) => { e.target.style.display = 'none' }}
         />
         <div className="w-px h-8 bg-[#3a3a3a]" />
