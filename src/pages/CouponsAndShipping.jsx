@@ -62,15 +62,15 @@ export default function CouponsAndShipping() {
   return (
     <div className="min-h-screen bg-[#fafafa]">
       {/* Header */}
-      <header className="sticky top-0 z-40 bg-white border-b border-[#e4e4e7] px-4 h-20 flex items-center gap-3">
+      <header className="sticky top-0 z-40 bg-black border-b border-[#1a1a1a] px-4 h-24 flex items-center gap-3">
         <img
           src={config.logos.full}
           alt={config.clientName}
-          className="h-14 w-auto object-contain"
+          className="h-16 w-auto object-contain"
           onError={(e) => { e.target.style.display = 'none' }}
         />
-        <div className="w-px h-8 bg-[#e4e4e7]" />
-        <h1 className="text-base font-bold text-[#1a1a1a]">Cupons & Frete</h1>
+        <div className="w-px h-8 bg-[#3a3a3a]" />
+        <h1 className="text-base font-bold text-white">Cupons & Frete</h1>
       </header>
 
       {/* Sub-abas */}
