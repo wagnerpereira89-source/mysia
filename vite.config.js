@@ -12,7 +12,10 @@ function injectConfigInHtml() {
       return html
         .replace(/%APP_NAME%/g, config.clientName)
         .replace(/%APP_SHORT_NAME%/g, config.clientShortName)
+        .replace(/%APP_DESCRIPTION%/g, config.appDescription)
         .replace(/%THEME_COLOR%/g, config.colors.primary)
+        .replace(/%OG_IMAGE_URL%/g, config.logos.icon)
+        .replace(/%SITE_URL%/g, config.siteUrl)
     },
   }
 }
