@@ -49,7 +49,7 @@ function BottomNav() {
   ]
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-[#e4e4e7] max-w-mobile mx-auto">
+    <div className="fixed bottom-0 left-0 right-0 z-40 bg-black border-t border-[#1a1a1a] max-w-mobile mx-auto">
       <div className="flex">
         {items.map((item) => {
           const active = path.startsWith(item.route)
